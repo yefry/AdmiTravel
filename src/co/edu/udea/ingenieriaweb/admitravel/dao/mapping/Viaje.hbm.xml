@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- 
+    @author Yeferson Marín
+-->
+<hibernate-mapping>
+    <class name="co.edu.udea.ingenieriaweb.admitravel.dto.Viaje" table="viaje">    
+        <id name="idViaje" type="string">
+            <column name="IdViaje" length="10"/>
+        </id>
+        <property name="precio" type="integer">
+            <column name="Precio" length="11" not-null="true"/>
+        </property>
+        <property name="fecha" type="date">
+            <column name="Fecha" not-null="true"/>
+        </property>    
+        <property name="estado" type="string">
+            <column name="Estado" length="16" not-null="true"/>
+        </property>
+    
+     	<!-- 
+    		para la foránea
+    	-->   
+        <many-to-one name="rol" class="co.edu.udea.iw.dto.Rol">
+        	<column name="rol" length="12" not-null="true"></column>
+        </many-to-one>
+        
+    </class>
+</hibernate-mapping>
