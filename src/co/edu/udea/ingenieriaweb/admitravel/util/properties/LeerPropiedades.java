@@ -1,9 +1,10 @@
-package co.edu.udea.iw.util.properties;
+package co.edu.udea.ingenieriaweb.admitravel.util.properties;
 
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
-import co.edu.udea.iw.util.exception.IWDaoException;
+import co.edu.udea.ingenieriaweb.admitravel.util.exception.IWDaoException;
+
 
 /**
  * Va a tomar la información de configuración desde el archivo de propiedades del DAO
