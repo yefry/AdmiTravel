@@ -15,13 +15,12 @@
 		show_sql se debe cambiar a false, cuando se termine el proyecto y cuando sepamos que todo esta funcionando bien,
 		esto eso solo para ir probando
 		-->		
-		<mapping resource="co/edu/udea/ingenieriaweb/dao/mapping/Cliente.hbm.xml" />
-		<mapping resource="co/edu/udea/ingenieriaweb/dao/mapping/ClienteViaje.hbm.xml" />
-		<mapping resource="co/edu/udea/ingenieriaweb/dao/mapping/Destino.hbm.xml" />
-		<mapping resource="co/edu/udea/ingenieriaweb/dao/mapping/PaqueteDeViaje.hbm.xml" />
-		<mapping resource="co/edu/udea/ingenieriaweb/dao/mapping/PaqueteTour.hbm.xml" />
-		<mapping resource="co/edu/udea/ingenieriaweb/dao/mapping/Tour.hbm.xml" />
-		<mapping resource="co/edu/udea/ingenieriaweb/dao/mapping/Viaje.hbm.xml" />		
+		<mapping resource="co/edu/udea/ingenieriaweb/admitravel/dao/mapping/Cliente.hbm.xml" />
+		<mapping resource="co/edu/udea/ingenieriaweb/admitravel/dao/mapping/ClienteViaje.hbm.xml" />
+		<mapping resource="co/edu/udea/ingenieriaweb/admitravel/dao/mapping/Destino.hbm.xml" />
+		<mapping resource="co/edu/udea/ingenieriaweb/admitravel/dao/mapping/PaqueteDeViaje.hbm.xml" />		
+		<mapping resource="co/edu/udea/ingenieriaweb/admitravel/dao/mapping/Tour.hbm.xml" />
+		<mapping resource="co/edu/udea/ingenieriaweb/admitravel/dao/mapping/Viaje.hbm.xml" />		
 	</session-factory>
 </hibernate-configuration>
 

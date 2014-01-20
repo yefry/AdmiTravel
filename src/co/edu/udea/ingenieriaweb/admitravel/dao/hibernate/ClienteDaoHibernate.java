@@ -19,6 +19,7 @@ public class ClienteDaoHibernate implements ClienteDao {
 
 	@Override
 	public List<Cliente> obtener() throws IWDaoException {
+		
 		List<Cliente> clientes = new ArrayList<Cliente>();
 		Session sesion = null;
 		try{

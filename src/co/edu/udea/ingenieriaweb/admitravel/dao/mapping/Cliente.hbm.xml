@@ -5,7 +5,8 @@
     @author Yeferson Marín
 -->
 <hibernate-mapping>
-    <class name="co.edu.udea.ingenieriaweb.admitravel.dto.Cliente" table="cliente">    
+    <class name="co.edu.udea.ingenieriaweb.admitravel.dto.Cliente" table="cliente">  
+      
         <id name="identificacion" type="string">
             <column name="Identificacion" length="20"/>
         </id>
@@ -45,7 +46,7 @@
     		
     		lazy true es eficiente cuando la sesion se queda abierta, si es falso es eficiente cuando se cierra
 		-->
-        <set name="viajes" inverse="true" lazy="true" fetch="select">
+        <set name="clienteviajes" inverse="true" lazy="false" fetch="select">
         	<key>
         		<column name="Identificacion"></column>
         	</key>

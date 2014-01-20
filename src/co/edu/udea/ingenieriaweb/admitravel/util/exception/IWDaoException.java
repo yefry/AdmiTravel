@@ -30,7 +30,4 @@ public class IWDaoException extends Exception {
 		super(arg0);
 		log.error(arg0.getMessage(), arg0);
 	}
-	
-	
-
 }
