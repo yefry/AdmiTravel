@@ -8,15 +8,26 @@ package co.edu.udea.ingenieriaweb.admitravel.dto;
  */
 public class Tour {
 	
+	/**
+	 * Nombre o lugares de los toures
+	 * */
 	private String nombre;
-	private String detalle;
-	private TourId id;
 	
-	public TourId getId() {
-		return id;
+	/**
+	 * Detalles del tour
+	 * */
+	private String detalle;
+	
+	/**
+	 * identificación del tour
+	 * */
+	private TourId idTour;
+	
+	public TourId getIdTour() {
+		return idTour;
 	}
-	public void setId(TourId id) {
-		this.id = id;
+	public void setIdTour(TourId idTour) {
+		this.idTour = idTour;
 	}
 	public String getNombre() {
 		return nombre;

@@ -7,9 +7,22 @@ package co.edu.udea.ingenieriaweb.admitravel.dto;
  * 
  */
 public class Destino {
+	
+	/**
+	 * Identificación del destino
+	 */
 	private String idDestino;
+	
+	/**
+	 * Nombre del destino
+	 * */
 	private String nombre;
+	
+	/**
+	 * Detalles a tener en cuenta del destino
+	 * */
 	private String detalle;
+	
 	public String getIdDestino() {
 		return idDestino;
 	}
@@ -27,6 +40,5 @@ public class Destino {
 	}
 	public void setDetalle(String detalle) {
 		this.detalle = detalle;
-	}
-	
+	}	
 }

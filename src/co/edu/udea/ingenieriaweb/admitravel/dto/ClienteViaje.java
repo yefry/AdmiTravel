@@ -8,9 +8,32 @@ package co.edu.udea.ingenieriaweb.admitravel.dto;
  */
 public class ClienteViaje {
 	
+	/**
+	 * El estado de pago es si el cliente canceló todo y se encuentra a paz y salvo o si solo abono
+	 */
 	private String estadoPago;
 	private ClienteViajeId id;
+	/**
+	 * Datos del viaje
+	 * */
+	private Viaje viaje;
+	/**
+	 * Datos del cliente
+	 * */
+	private Cliente cliente;
 	
+	public Viaje getViaje() {
+		return viaje;
+	}
+	public void setViaje(Viaje viaje) {
+		this.viaje = viaje;
+	}
+	public Cliente getCliente() {
+		return cliente;
+	}
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
 	public ClienteViajeId getId() {
 		return id;
 	}

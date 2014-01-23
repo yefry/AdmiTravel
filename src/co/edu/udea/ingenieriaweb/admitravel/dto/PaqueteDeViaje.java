@@ -7,10 +7,30 @@ package co.edu.udea.ingenieriaweb.admitravel.dto;
  * 
  */
 public class PaqueteDeViaje {
+	
+	/**
+	 * Identificación del paquete de viaje
+	 */
 	private String idPaquete;
+	
+	/**
+	 * Este campo no debería de ir hay que eliminarlo
+	 * */
 	private String destinos;
+	
+	/**
+	 * Tipo de transporte que es cubierto por el paquete (Terrestre, aereo)
+	 * */
 	private String transporte;
+	
+	/**
+	 * Alimentación que es cubierta por el paquete (Desayuno, Almuerzo, Cena)
+	 * */
 	private String alimentacion;
+	
+	/**
+	 * Duración del viaje tomado (ej: 4 días, 3 noches)
+	 * */
 	private String duracionViaje;
 	
 	public String getIdPaquete() {

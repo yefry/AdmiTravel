@@ -8,7 +8,7 @@ import org.hibernate.cfg.Configuration;
 import co.edu.udea.ingenieriaweb.admitravel.util.exception.IWDaoException;
 
 /**
- * Configura y provee aceso a las sesiones de Hibernata
+ * Configura y provee acceso a las sesiones de Hibernate
  */
 public class HibernateSessionFactory {
 	
@@ -39,7 +39,7 @@ public class HibernateSessionFactory {
 	}
 	
 	/**
-	 * Construye la factoria de sesiones con el archvio de configuración de Hibernate dado
+	 * Construye la factoría de sesiones con el archivo de configuración de Hibernate dado
 	 */
 	public static void rebuildSessionFactory() throws IWDaoException{
 		try {

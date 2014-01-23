@@ -8,6 +8,7 @@ import org.junit.Test;
 
 import co.edu.udea.ingenieriaweb.admitravel.dao.ClienteDao;
 import co.edu.udea.ingenieriaweb.admitravel.dto.Cliente;
+import co.edu.udea.ingenieriaweb.admitravel.dto.ClienteViaje;
 import co.edu.udea.ingenieriaweb.admitravel.util.exception.IWDaoException;
 
 public class ClienteDaoHibernateTest {
@@ -23,7 +24,7 @@ public class ClienteDaoHibernateTest {
 				System.out.println("Cedula: " + cliente.getIdentificacion());
 				System.out.println("Nombre completo: " + cliente.getNombres() + " ");
 				
-//				for (Direccion direccion : cliente.getDirecciones()) {
+//				for (ClienteViaje viajes : cliente.getViajes()) {
 //					System.out.println("*******************************************************************");
 //				}
 			}

@@ -11,7 +11,7 @@ import java.util.Set;
 public class Cliente {
 
 	/**
-	 * Numero de identificación del cliente
+	 * Número de identificación del cliente
 	 */
 	private String identificacion;
 
@@ -68,12 +68,12 @@ public class Cliente {
 	Set<ClienteViaje> clienteViajes;
 	
 
-	public Set<ClienteViaje> getViajes() {
+	public Set<ClienteViaje> getClienteViajes() {
 		return clienteViajes;
 	}
 
-	public void setViajes(Set<ClienteViaje> viajes) {
-		this.clienteViajes = viajes;
+	public void setClienteViajes(Set<ClienteViaje> clienteViajes) {
+		this.clienteViajes = clienteViajes;
 	}
 
 	public String getIdentificacion() {

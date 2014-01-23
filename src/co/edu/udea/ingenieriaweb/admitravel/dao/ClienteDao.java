@@ -11,6 +11,7 @@ import co.edu.udea.ingenieriaweb.admitravel.util.exception.IWDaoException;
  *
  */
 public interface ClienteDao {
+	
 	/**
 	 * Entrega todos los clientes que se encuentran almacenados en el sistema, sin importar
 	 * si esta eliminado o no.
@@ -21,16 +22,28 @@ public interface ClienteDao {
 	
 	/**
 	 * Entrega los datos de un cliente dado su cedula, si el cliente no exite retorna null
-	 * @param cedula cedula del cliente
+	 * @param identificación: identificación del cliente
 	 * @return instancia del cliente con los datos, si no existe retorna nulo.
 	 * @throws IWDaoException
 	 */
-	public Cliente obtener(String cedula) throws IWDaoException;
+	public Cliente obtener(String identificacion) throws IWDaoException;
 	
+	/**
+	 * Guarda los datos de un cliente, teniendo en cuenta los datos que pueden ser nulos
+	 * @param cliente: datos del cliente
+	 * @return instancia del cliente con los datos que se guardaron.
+	 * @throws IWDaoException
+	 */
 	public Cliente guardar(Cliente cliente) throws IWDaoException;
 	
+	/**
+	 * Actualiza los datos de un cliente, teniendo en cuenta que datos pueden ser nulos
+	 * @param cliente: datos del cliente a actualizar
+	 * @return instancia del cliente con los datos que se actualizaron.
+	 * @throws IWDaoException
+	 */
 	public Cliente actualizar(Cliente cliente) throws IWDaoException;
 	
-	public void eliminar(Cliente cliente) throws IWDaoException;
+//	public void eliminar(Cliente cliente) throws IWDaoException;
 	
 }

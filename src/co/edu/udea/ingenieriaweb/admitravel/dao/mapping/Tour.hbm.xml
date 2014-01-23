@@ -15,8 +15,5 @@
         <property name="detalle" type="string">
             <column name="Detalle" length="500" not-null="false"/>
         </property>        
-        
-
-        
     </class>
 </hibernate-mapping>

@@ -4,6 +4,11 @@ import co.edu.udea.ingenieriaweb.admitravel.dao.TourDao;
 import co.edu.udea.ingenieriaweb.admitravel.dto.Tour;
 import co.edu.udea.ingenieriaweb.admitravel.util.exception.IWDaoException;
 
+/**
+ * Implementación de funciones del DAO de Tour
+ * @author Yeferson Marín
+ *
+ */
 public class TourDaoHibernate implements TourDao{
 
 	@Override
@@ -23,12 +28,5 @@ public class TourDaoHibernate implements TourDao{
 		// TODO Auto-generated method stub
 		return null;
 	}
-
-	@Override
-	public void eliminar(Tour cliente) throws IWDaoException {
-		// TODO Auto-generated method stub
-		
-	}
-
 	
 }

@@ -15,6 +15,11 @@ import co.edu.udea.ingenieriaweb.admitravel.dao.HibernateSessionFactory;
 import co.edu.udea.ingenieriaweb.admitravel.dto.Cliente;
 import co.edu.udea.ingenieriaweb.admitravel.util.exception.IWDaoException;
 
+/**
+ * Implementación de funciones del DAO de Cliente
+ * @author Yeferson Marín
+ *
+ */
 public class ClienteDaoHibernate implements ClienteDao {
 
 	@Override
@@ -81,10 +86,4 @@ public class ClienteDaoHibernate implements ClienteDao {
 		
 		return cliente;
 	}
-
-	@Override
-	public void eliminar(Cliente cliente) throws IWDaoException {
-		// TODO Auto-generated method stub		
-	}
-
 }

@@ -6,6 +6,11 @@ import co.edu.udea.ingenieriaweb.admitravel.dao.ViajeDao;
 import co.edu.udea.ingenieriaweb.admitravel.dto.Viaje;
 import co.edu.udea.ingenieriaweb.admitravel.util.exception.IWDaoException;
 
+/**
+ * Implementación de funciones del DAO de Viaje
+ * @author Yeferson Marín
+ *
+ */
 public class ViajeDaoHibernate implements ViajeDao{
 
 	@Override
@@ -30,12 +35,6 @@ public class ViajeDaoHibernate implements ViajeDao{
 	public Viaje actualizar(Viaje cliente) throws IWDaoException {
 		// TODO Auto-generated method stub
 		return null;
-	}
-
-	@Override
-	public void eliminar(Viaje cliente) throws IWDaoException {
-		// TODO Auto-generated method stub
-		
 	}
 
 }
