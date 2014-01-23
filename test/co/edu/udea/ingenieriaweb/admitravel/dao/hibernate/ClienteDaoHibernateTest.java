@@ -23,10 +23,7 @@ public class ClienteDaoHibernateTest {
 			for(Cliente cliente : lista){
 				System.out.println("Cedula: " + cliente.getIdentificacion());
 				System.out.println("Nombre completo: " + cliente.getNombres() + " ");
-				
-//				for (ClienteViaje viajes : cliente.getViajes()) {
-//					System.out.println("*******************************************************************");
-//				}
+				System.out.println("Genero: " + cliente.getGenero() + " ");
 			}
 		}catch (IWDaoException e) {
 			e.printStackTrace();
@@ -37,17 +34,39 @@ public class ClienteDaoHibernateTest {
 
 	@Test
 	public void testObtenerString() {
-		fail("Not yet implemented"); // TODO
+		try{
+			ClienteDao dao = new ClienteDaoHibernate();
+			Cliente cliente = dao.obtener("1023345789");			
+			System.out.println("Cedula: " + cliente.getIdentificacion());
+			System.out.println("Nombre completo: " + cliente.getNombres() + " ");
+			System.out.println("Genero: " + cliente.getGenero() + " ");
+			
+		}catch (IWDaoException e) {
+			e.printStackTrace();
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Test
 	public void testGuardar() {
-		fail("Not yet implemented"); // TODO
+		try{
+			ClienteDao dao = new ClienteDaoHibernate();
+			Cliente cliente = dao.obtener("1023345789");			
+			System.out.println("Cedula: " + cliente.getIdentificacion());
+			System.out.println("Nombre completo: " + cliente.getNombres() + " ");
+			System.out.println("Genero: " + cliente.getGenero() + " ");
+			
+		}catch (IWDaoException e) {
+			e.printStackTrace();
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
-	@Test
-	public void testActualizar() {
-		fail("Not yet implemented"); // TODO
-	}
+//	@Test
+//	public void testActualizar() {
+//		fail("Not yet implemented"); // TODO
+//	}
 
 }

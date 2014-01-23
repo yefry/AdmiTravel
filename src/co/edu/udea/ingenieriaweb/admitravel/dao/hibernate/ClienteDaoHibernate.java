@@ -23,8 +23,7 @@ import co.edu.udea.ingenieriaweb.admitravel.util.exception.IWDaoException;
 public class ClienteDaoHibernate implements ClienteDao {
 
 	@Override
-	public List<Cliente> obtener() throws IWDaoException {
-		
+	public List<Cliente> obtener() throws IWDaoException {		
 		List<Cliente> clientes = new ArrayList<Cliente>();
 		Session sesion = null;
 		try{
@@ -43,8 +42,7 @@ public class ClienteDaoHibernate implements ClienteDao {
 	public Cliente obtener(String identificacion) throws IWDaoException {		
 		Cliente cliente = null;
 		try{
-			Session sesion = HibernateSessionFactory.getInstance().getSession();
-			
+			Session sesion = HibernateSessionFactory.getInstance().getSession();			
 			cliente = (Cliente)sesion.createCriteria(Cliente.class)
 							 .add(Restrictions.eq("identificacion", identificacion))
 							 .uniqueResult();
@@ -58,14 +56,10 @@ public class ClienteDaoHibernate implements ClienteDao {
 	public Cliente guardar(Cliente cliente) throws IWDaoException {
 		Transaction tx = null;
 		try{
-			Session sesion = HibernateSessionFactory.getInstance().getSession();
-			
-			tx = sesion.beginTransaction();
-			
-			sesion.save(cliente);
-			
-			tx.commit();
-			
+			Session sesion = HibernateSessionFactory.getInstance().getSession();			
+			tx = sesion.beginTransaction();			
+			sesion.save(cliente);			
+			tx.commit();			
 		}catch (HibernateException e) {
 			throw new IWDaoException(e);
 		}		
@@ -82,8 +76,7 @@ public class ClienteDaoHibernate implements ClienteDao {
 			tx.commit();
 		}catch (HibernateException e) {
 			throw new IWDaoException(e);
-		}
-		
+		}		
 		return cliente;
 	}
 }
